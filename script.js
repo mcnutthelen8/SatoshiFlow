@@ -64,14 +64,14 @@
       const claimedinput = document.getElementById('walletAddress');
 
       if (!walletAddress) {
-        alert('Please enter your wallet address.');
+        //alert('Please enter your wallet address.');
         return;
       }
 
       claimBtn.style.display = 'none';
       claimedmsg.style.display = 'inline-block';
       claimedinput.style.display = 'none';
-      alert(`Reward claimed for ${walletAddress}!`);
+      //alert(`Reward claimed for ${walletAddress}!`);
     }
 
     window.addEventListener('load', checkVPNAndStartTimer);
