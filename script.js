@@ -13,7 +13,7 @@
         const ip = ipData.ip;
 
         // Step 2: Check for VPN/Proxy
-        const proxyRes = await fetch(`https://proxycheck.io/v2/${ip}?vpn=1&asn=1`);
+        const proxyRes = await fetch(`/.netlify/functions/checkproxy?ip=${ip}`); // https://proxycheck.io/v2/${ip}?vpn=1&asn=1`);
         const proxyData = await proxyRes.json();
 
         if (proxyData.status === "ok" && proxyData[ip]) {
