@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Earn Free Crypto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>SatoshiFlow - Earn Free Crypto Reward</header>
+
+  <nav>
+    <a href="index.html">Faucet</a>
+    <a href="comingsoon.html">Shortlinks</a>
+    <a href="comingsoon.html">Other Faucets</a>
+    <a href="comingsoon.html">Contact</a>
+  </nav>
+
+  <div class="earn-crypto" >
+        <p id="user-check"></p>
+        <div id="faucet-area">
+    <h2 id="faucet">Free Crypto, Earn a reward Just one click Away.</h2>
+    
+    <br />
+    <input type="text" placeholder="Enter your Faucet mail" id="walletAddress" style="width: 300px; padding: 10px; margin-bottom: 10px;" />
+    <br />
+
+    <p id="countdownMessage">Checking your connection...</p>
+    <p id="Claimed-Message" style="display: none; color: green; background-color: rgba(91, 239, 91, 0.123);">Congratulation, Rewards are sent within 3 days.</p>
+
+    <button class="button"  id="claimBtn" onclick="claimReward()" style="display: none;vertical-align:middle"><span>Claim</span></button>
+    <p id="rules">Please note that we only count 30 clicks per day. Anything above that, you will <b style="color: red;">NOT get any reward</b>.</p>
+  </div></div>
+    <p id="user-check"></p>
+    <script src="script.js"></script>
+</body>
+</html>
