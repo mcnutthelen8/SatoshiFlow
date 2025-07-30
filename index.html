@@ -98,6 +98,14 @@
   </div>
 
   <script src="script.js"></script>
+<script>
+  document.addEventListener("click", function(e) {
+    let el = e.target.closest("a");
+    if (el && el.href && el.href.includes("highperformanceformat.com")) {
+      el.setAttribute("target", "_blank");
+    }
+  });
+</script>
 
   <!-- ✅ Social Bar - Place before </body> -->
   <script type='text/javascript' src='//pl27297241.profitableratecpm.com/68/b2/7a/68b27a55839605fa6ac703610334da74.js'></script>
