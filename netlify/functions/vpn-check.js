@@ -1,7 +1,7 @@
 export async function handler(event) {
   const ip = event.queryStringParameters.ip || '8.8.8.8'; // fallback IP
 
-  const url = `https://proxycheck.io/v2/${ip}?key=434489-84608j-v97020-20y548&vpn=1&asn=1`;
+  const url = `https://proxycheck.io/v2/${ip}?vpn=1&asn=1`;
 
   try {
     const response = await fetch(url);
